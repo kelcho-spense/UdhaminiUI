@@ -1,6 +1,18 @@
-@media (max-width: 375px) {
+@media (max-width: 375px), (max-width: 414px) {
     .userprofile {
         display: none;
         flex-direction: column;
     }
+        .register{
+            font-size: x-large;
+    }
+    .loginImg{
+        max-width: 100%;     
+        display: none;   
+    }
+    .resetImg{
+        max-width: 100%;     
+        display: none;   
+    }
   }
+  

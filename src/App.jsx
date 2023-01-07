@@ -9,6 +9,7 @@ import Register from './pages/Register';
 import Login from './pages/Login';
 import About from './pages/About';
 import Profile from './pages/Profile';
+import ResetPassword from './pages/ResetPassword';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import Premium from './components/Premium';
 import Scholarship from './components/Scholarship';
@@ -27,6 +28,7 @@ function App() {
             <Route path="register" element={<Register />} />
             <Route path="login" element={<Login />} />
             <Route path="about" element={<About />} />
+            <Route path="reset" element={<ResetPassword />} />
             <Route path="profile" element={user ? <Profile /> : <Home />} />
             <Route path="profile/premium" element={user ? <Premium /> : <Home />} />
             <Route path="profile/scholarships" element={user ? <Scholarship /> : <Home />} />
